@@ -3,12 +3,13 @@ runs/
 
 all_scalars.json
 
+*.tar
 *.pyc
 *.pt
 *.swp
 *.so
 *.o
-
-
-
+*.json
+*.flo
+runs/
 

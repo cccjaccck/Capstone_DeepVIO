@@ -4,12 +4,11 @@ SE3 quaternion tools
 
 
 import sys
-sys.path
-sys.path.append('/notebooks/Sophus/py')
+sys.path.append('/home/mongsil/workspace/build_ws_tf114/Sophus/py')
 
+from sympy import *
 from sophus import *
 import numpy as np
-from sympy import *
 
 from pyquaternion import Quaternion as Qua
 
@@ -65,8 +64,8 @@ def SE3toXYZQuaternion(matrix):
 
     q = np.array(matrix[0:3,0:3]).astype(float)
     
-    if not np.allclose(np.dot(q, q.conj().transpose()), np.eye(3)):
-        print(q)
+#     if not np.allclose(np.dot(q, q.conj().transpose()), np.eye(3)):
+#         print(q)
     
     q8d = Qua(matrix=q)
     r = np.array([q8d.real]).astype(float)

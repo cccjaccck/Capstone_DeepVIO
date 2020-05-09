@@ -1,8 +1,3 @@
-import sys
-sys.path = ['', '/home/mongsil/anaconda3/envs/torch040/lib/python36.zip', '/home/mongsil/anaconda3/envs/torch040/lib/python3.6', '/home/mongsil/anaconda3/envs/torch040/lib/python3.6/lib-dynload', '/home/mongsil/anaconda3/envs/torch040/lib/python3.6/site-packages']
-print(sys.version_info)
-print(sys.path)
-
 import os
 import torch
 import torch.utils.ffi
@@ -15,13 +10,13 @@ Defines = []
 Objects = []
 
 if torch.cuda.is_available() == True:
-    Headers += ['src/correlation_cuda.h']
-    Sources += ['src/correlation_cuda.c']
+    Headers += ['src/ChannelNorm_cuda.h']
+    Sources += ['src/ChannelNorm_cuda.c']
     Defines += [('WITH_CUDA', None)]
-    Objects += ['src/correlation_cuda_kernel.o']
+    Objects += ['src/ChannelNorm_kernel.o']
 
 ffi = torch.utils.ffi.create_extension(
-    name='_ext.correlation',
+    name='_ext.channelnorm',
     headers=Headers,
     sources=Sources,
     verbose=False,

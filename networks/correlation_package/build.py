@@ -1,8 +1,3 @@
-import sys
-sys.path = ['', '/home/mongsil/anaconda3/envs/torch040/lib/python36.zip', '/home/mongsil/anaconda3/envs/torch040/lib/python3.6', '/home/mongsil/anaconda3/envs/torch040/lib/python3.6/lib-dynload', '/home/mongsil/anaconda3/envs/torch040/lib/python3.6/site-packages']
-print(sys.version_info)
-print(sys.path)
-
 import os
 import torch
 import torch.utils.ffi

@@ -2,10 +2,6 @@
 
 (Whole project are still under construction.)
 
-Waiting for implement: Adjust hyper-parameters
-
-
-
 # Installation
 
 It's recommand to use docker image to run this project.
@@ -22,6 +18,12 @@ Execute main.py by
 ```bash
 python3 main.py
 ```
+
+# Note
+## Network detail structure
+![](./doc_fig/vinet.png)
+
+![](./doc_fig/se3_def.png)
 
 
 

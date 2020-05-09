@@ -289,10 +289,8 @@ __global__ void Correlation_backward_input2(int item, float *gradInput2, int nIn
 
 }
 
-#pragma once
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
 int Correlation_forward_cuda_kernel(/*THCudaTensor_data(state, output)*/ float *output,
