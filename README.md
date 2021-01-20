@@ -1,3 +1,6 @@
+# It is not working well, 
+# if you try to use this, you should change some codes.
+
 >non-official PyTorch implementation of VINet[1]
 
 (Whole project are still under construction.)
