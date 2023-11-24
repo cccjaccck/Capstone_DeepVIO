@@ -1,8 +1,14 @@
-# It is not working well, 
+# Caution: It is not working well, 
 if you try to use this, you should change some codes
 
+# The original repo is below:
+https://github.com/HTLife/VINet
 
 
+
+---
+---
+---
 
 
 >non-official PyTorch implementation of VINet[1]
